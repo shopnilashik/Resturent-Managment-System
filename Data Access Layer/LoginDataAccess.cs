@@ -17,7 +17,7 @@ namespace Resturent_Managment_System.Data_Access_Layer
             SqlDataReader reader = this.GetData(sql);
             if (reader.Read())
             {
-                return 1;
+                return Convert.ToInt32(reader["usertype"]); ;
             }
             return -1;
         }

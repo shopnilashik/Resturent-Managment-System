@@ -38,14 +38,14 @@ namespace Resturent_Managment_System.Presentation_Layer
             this.deleteProductIdTextBox = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.updateProductIdTextBox = new System.Windows.Forms.TextBox();
+            this.updateFoodIdTextBox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.updateProductCategoryComboBox = new System.Windows.Forms.ComboBox();
+            this.updateFoodCategoryComboBox = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.updateProductPriceTextBox = new System.Windows.Forms.TextBox();
+            this.updateFoodPriceTextBox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.updateButton = new System.Windows.Forms.Button();
-            this.updateProductNameTextBox = new System.Windows.Forms.TextBox();
+            this.updateFoodNameTextBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.addProductCategoryComboBox = new System.Windows.Forms.ComboBox();
@@ -57,6 +57,8 @@ namespace Resturent_Managment_System.Presentation_Layer
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.productListDataGridView = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.productsByCategoryGridView)).BeginInit();
             this.groupBox4.SuspendLayout();
@@ -72,9 +74,9 @@ namespace Resturent_Managment_System.Presentation_Layer
             this.groupBox5.Controls.Add(this.productByCategoryComboBox);
             this.groupBox5.Controls.Add(this.label9);
             this.groupBox5.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox5.Location = new System.Drawing.Point(409, 178);
+            this.groupBox5.Location = new System.Drawing.Point(416, 156);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(483, 228);
+            this.groupBox5.Size = new System.Drawing.Size(483, 212);
             this.groupBox5.TabIndex = 15;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Categorywise Product List";
@@ -83,7 +85,7 @@ namespace Resturent_Managment_System.Presentation_Layer
             // productsByCategoryGridView
             // 
             this.productsByCategoryGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.productsByCategoryGridView.Location = new System.Drawing.Point(61, 66);
+            this.productsByCategoryGridView.Location = new System.Drawing.Point(61, 56);
             this.productsByCategoryGridView.Name = "productsByCategoryGridView";
             this.productsByCategoryGridView.Size = new System.Drawing.Size(369, 150);
             this.productsByCategoryGridView.TabIndex = 2;
@@ -148,14 +150,14 @@ namespace Resturent_Managment_System.Presentation_Layer
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.updateProductIdTextBox);
+            this.groupBox3.Controls.Add(this.updateFoodIdTextBox);
             this.groupBox3.Controls.Add(this.label7);
-            this.groupBox3.Controls.Add(this.updateProductCategoryComboBox);
+            this.groupBox3.Controls.Add(this.updateFoodCategoryComboBox);
             this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.Controls.Add(this.updateProductPriceTextBox);
+            this.groupBox3.Controls.Add(this.updateFoodPriceTextBox);
             this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Controls.Add(this.updateButton);
-            this.groupBox3.Controls.Add(this.updateProductNameTextBox);
+            this.groupBox3.Controls.Add(this.updateFoodNameTextBox);
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(6, 220);
@@ -165,12 +167,12 @@ namespace Resturent_Managment_System.Presentation_Layer
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Update Product";
             // 
-            // updateProductIdTextBox
+            // updateFoodIdTextBox
             // 
-            this.updateProductIdTextBox.Location = new System.Drawing.Point(117, 31);
-            this.updateProductIdTextBox.Name = "updateProductIdTextBox";
-            this.updateProductIdTextBox.Size = new System.Drawing.Size(146, 22);
-            this.updateProductIdTextBox.TabIndex = 8;
+            this.updateFoodIdTextBox.Location = new System.Drawing.Point(117, 31);
+            this.updateFoodIdTextBox.Name = "updateFoodIdTextBox";
+            this.updateFoodIdTextBox.Size = new System.Drawing.Size(146, 22);
+            this.updateFoodIdTextBox.TabIndex = 8;
             // 
             // label7
             // 
@@ -181,13 +183,13 @@ namespace Resturent_Managment_System.Presentation_Layer
             this.label7.TabIndex = 7;
             this.label7.Text = "Product Id";
             // 
-            // updateProductCategoryComboBox
+            // updateFoodCategoryComboBox
             // 
-            this.updateProductCategoryComboBox.FormattingEnabled = true;
-            this.updateProductCategoryComboBox.Location = new System.Drawing.Point(117, 146);
-            this.updateProductCategoryComboBox.Name = "updateProductCategoryComboBox";
-            this.updateProductCategoryComboBox.Size = new System.Drawing.Size(146, 22);
-            this.updateProductCategoryComboBox.TabIndex = 6;
+            this.updateFoodCategoryComboBox.FormattingEnabled = true;
+            this.updateFoodCategoryComboBox.Location = new System.Drawing.Point(117, 146);
+            this.updateFoodCategoryComboBox.Name = "updateFoodCategoryComboBox";
+            this.updateFoodCategoryComboBox.Size = new System.Drawing.Size(146, 22);
+            this.updateFoodCategoryComboBox.TabIndex = 6;
             // 
             // label4
             // 
@@ -198,12 +200,12 @@ namespace Resturent_Managment_System.Presentation_Layer
             this.label4.TabIndex = 5;
             this.label4.Text = "Product Category";
             // 
-            // updateProductPriceTextBox
+            // updateFoodPriceTextBox
             // 
-            this.updateProductPriceTextBox.Location = new System.Drawing.Point(117, 105);
-            this.updateProductPriceTextBox.Name = "updateProductPriceTextBox";
-            this.updateProductPriceTextBox.Size = new System.Drawing.Size(146, 22);
-            this.updateProductPriceTextBox.TabIndex = 4;
+            this.updateFoodPriceTextBox.Location = new System.Drawing.Point(117, 105);
+            this.updateFoodPriceTextBox.Name = "updateFoodPriceTextBox";
+            this.updateFoodPriceTextBox.Size = new System.Drawing.Size(146, 22);
+            this.updateFoodPriceTextBox.TabIndex = 4;
             // 
             // label5
             // 
@@ -224,12 +226,12 @@ namespace Resturent_Managment_System.Presentation_Layer
             this.updateButton.UseVisualStyleBackColor = true;
             this.updateButton.Click += new System.EventHandler(this.updateButton_Click);
             // 
-            // updateProductNameTextBox
+            // updateFoodNameTextBox
             // 
-            this.updateProductNameTextBox.Location = new System.Drawing.Point(117, 68);
-            this.updateProductNameTextBox.Name = "updateProductNameTextBox";
-            this.updateProductNameTextBox.Size = new System.Drawing.Size(146, 22);
-            this.updateProductNameTextBox.TabIndex = 1;
+            this.updateFoodNameTextBox.Location = new System.Drawing.Point(117, 68);
+            this.updateFoodNameTextBox.Name = "updateFoodNameTextBox";
+            this.updateFoodNameTextBox.Size = new System.Drawing.Size(146, 22);
+            this.updateFoodNameTextBox.TabIndex = 1;
             // 
             // label6
             // 
@@ -264,6 +266,7 @@ namespace Resturent_Managment_System.Presentation_Layer
             this.addProductCategoryComboBox.Name = "addProductCategoryComboBox";
             this.addProductCategoryComboBox.Size = new System.Drawing.Size(146, 22);
             this.addProductCategoryComboBox.TabIndex = 6;
+            this.addProductCategoryComboBox.SelectedIndexChanged += new System.EventHandler(this.addProductCategoryComboBox_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -332,18 +335,40 @@ namespace Resturent_Managment_System.Presentation_Layer
             this.productListDataGridView.AllowUserToAddRows = false;
             this.productListDataGridView.AllowUserToDeleteRows = false;
             this.productListDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.productListDataGridView.Location = new System.Drawing.Point(17, 25);
+            this.productListDataGridView.Location = new System.Drawing.Point(-20, 25);
             this.productListDataGridView.Name = "productListDataGridView";
             this.productListDataGridView.ReadOnly = true;
-            this.productListDataGridView.Size = new System.Drawing.Size(262, 150);
+            this.productListDataGridView.Size = new System.Drawing.Size(299, 135);
             this.productListDataGridView.TabIndex = 0;
             this.productListDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.productListDataGridView_CellContentClick);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(718, 374);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(95, 32);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Back";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(823, 374);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(76, 32);
+            this.button2.TabIndex = 16;
+            this.button2.Text = "Log Out";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // ManageFood
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(904, 450);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
@@ -351,6 +376,7 @@ namespace Resturent_Managment_System.Presentation_Layer
             this.Controls.Add(this.groupBox1);
             this.Name = "ManageFood";
             this.Text = "ManageFood";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ManageFood_FormClosing);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.productsByCategoryGridView)).EndInit();
@@ -377,14 +403,14 @@ namespace Resturent_Managment_System.Presentation_Layer
         private System.Windows.Forms.TextBox deleteProductIdTextBox;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.TextBox updateProductIdTextBox;
+        private System.Windows.Forms.TextBox updateFoodIdTextBox;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox updateProductCategoryComboBox;
+        private System.Windows.Forms.ComboBox updateFoodCategoryComboBox;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox updateProductPriceTextBox;
+        private System.Windows.Forms.TextBox updateFoodPriceTextBox;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button updateButton;
-        private System.Windows.Forms.TextBox updateProductNameTextBox;
+        private System.Windows.Forms.TextBox updateFoodNameTextBox;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.ComboBox addProductCategoryComboBox;
@@ -396,5 +422,7 @@ namespace Resturent_Managment_System.Presentation_Layer
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView productListDataGridView;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

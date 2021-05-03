@@ -34,7 +34,7 @@ namespace Resturent_Managment_System.Presentation_Layer
             int result = foodService.AddNewFood(addProductNameTextBox.Text, Convert.ToDouble(addProductPriceTextBox.Text), addProductCategoryComboBox.Text);
             if (result > 0)
             {
-                MessageBox.Show("New product added successfully !!");
+                MessageBox.Show("New Food Added successfully !!");
                 UpdateListOfFoods();
             }
             else
@@ -45,13 +45,23 @@ namespace Resturent_Managment_System.Presentation_Layer
 
         private void updateButton_Click(object sender, EventArgs e)
         {
-            
+            FoodService foodService = new FoodService();
+            int result = foodService.UpdateExistingFood(Convert.ToInt32(updateFoodIdTextBox.Text), updateFoodNameTextBox.Text, Convert.ToInt32(updateFoodPriceTextBox.Text), updateFoodCategoryComboBox.Text);
+            if (result > 0)
+            {
+                MessageBox.Show("Food updated successfully !!");
+                UpdateListOfFoods();
+            }
+            else
+            {
+                MessageBox.Show("Error in updating.");
+            }
         }
 
         private void productsByCategoryGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            FoodService productService = new FoodService();
-            productsByCategoryGridView.DataSource = productService.GetAllFoodsByCategory(productByCategoryComboBox.Text);
+            FoodService foodService = new FoodService();
+            productsByCategoryGridView.DataSource = foodService.GetAllFoodsByCategory(productByCategoryComboBox.Text);
         }
 
         private void label9_Click(object sender, EventArgs e)
@@ -66,10 +76,47 @@ namespace Resturent_Managment_System.Presentation_Layer
 
         private void deleteButton_Click(object sender, EventArgs e)
         {
+            FoodService foodService = new FoodService();
+            int result = foodService.DeleteFood(Convert.ToInt32(deleteProductIdTextBox.Text));
+            if (result > 0)
+            {
+                MessageBox.Show("Category deleted successfully !!");
+                UpdateListOfFoods();
+            }
+            else
+            {
+                MessageBox.Show("Error in deleting.");
+            }
 
         }
 
         private void productListDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void ManageFood_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            LoginForm  login = new LoginForm();
+            this.Hide();
+            login.Show();
+
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            LoginForm login = new LoginForm();
+            this.Hide();
+            login.Show();
+        }
+
+        private void addProductCategoryComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

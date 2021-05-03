@@ -50,13 +50,22 @@
     <Compile Include="Business Logic Layer\CategoryService.cs" />
     <Compile Include="Business Logic Layer\FoodService.cs" />
     <Compile Include="Business Logic Layer\LoginService.cs" />
+    <Compile Include="Business Logic Layer\OrderSevice.cs" />
     <Compile Include="Data Access Layer\CategoryDataAccess.cs" />
     <Compile Include="Data Access Layer\DataAccess.cs" />
     <Compile Include="Data Access Layer\Entities\Category.cs" />
     <Compile Include="Data Access Layer\Entities\Food.cs" />
+    <Compile Include="Data Access Layer\Entities\Order.cs" />
     <Compile Include="Data Access Layer\Entities\User.cs" />
     <Compile Include="Data Access Layer\FoodDataAccess.cs" />
     <Compile Include="Data Access Layer\LoginDataAccess.cs" />
+    <Compile Include="Data Access Layer\OrderDataAccess.cs" />
+    <Compile Include="Presentation Layer\Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentation Layer\Manage Category .cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +77,12 @@
     </Compile>
     <Compile Include="Presentation Layer\ManageFood.Designer.cs">
       <DependentUpon>ManageFood.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\OrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\OrderForm.Designer.cs">
+      <DependentUpon>OrderForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentation Layer\Registration.cs">
       <SubType>Form</SubType>
@@ -83,11 +98,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Presentation Layer\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentation Layer\Manage Category .resx">
       <DependentUpon>Manage Category .cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation Layer\ManageFood.resx">
       <DependentUpon>ManageFood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\OrderForm.resx">
+      <DependentUpon>OrderForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation Layer\Registration.resx">
       <DependentUpon>Registration.cs</DependentUpon>

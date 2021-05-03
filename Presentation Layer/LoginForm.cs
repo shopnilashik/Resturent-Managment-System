@@ -24,11 +24,22 @@ namespace Resturent_Managment_System.Presentation_Layer
             int result = loginService.LoginValidation(usernameTextBox.Text, passwordTextBox.Text);
             if (result == 1)
             {
-                Registration dashboard = new Registration();
+                Dashboard dashboard = new Dashboard();
                 this.Hide();
                 dashboard.Show();
             }
-            
+            else if (result == 2)
+            {
+                ManageFood manageProduct = new ManageFood();
+                this.Hide();
+                manageProduct.Show();
+            }
+            else if (result > 2)
+            {
+                ManageFood manageProduct = new ManageFood();
+                this.Hide();
+                manageProduct.Show();
+            }
             else
             {
                 MessageBox.Show("Invalid username or password");
@@ -59,6 +70,11 @@ namespace Resturent_Managment_System.Presentation_Layer
             ManageFood manage = new ManageFood();
             this.Hide();
             manage.Show();
+        }
+
+        private void LoginForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

@@ -85,5 +85,25 @@ namespace Resturent_Managment_System.Presentation_Layer
                 MessageBox.Show("Error in deleting.");
             }
         }
+
+        private void Manage_Category_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            LoginForm login = new LoginForm();
+            this.Hide();
+            login.Show();
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            LoginForm login = new LoginForm();
+            this.Hide();
+            login.Show();
+        }
     }
 }

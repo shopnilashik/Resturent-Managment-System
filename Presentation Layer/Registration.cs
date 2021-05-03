@@ -25,12 +25,20 @@ namespace Resturent_Managment_System.Presentation_Layer
             if (result > 0)
             {
                 MessageBox.Show("New User added successfully !!");
-                
+
+                Dashboard dashboard = new Dashboard();
+                this.Hide();
+                dashboard.Show();
             }
             else
             {
                 MessageBox.Show("Error in adding.");
             }
+        }
+
+        private void Registration_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
